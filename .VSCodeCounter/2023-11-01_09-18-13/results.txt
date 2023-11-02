@@ -1,0 +1,143 @@
+Date : 2023-11-01 09:18:13
+Directory : c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia
+Total : 104 files,  24806 codes, 2714 comments, 3962 blanks, all 31482 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| XML        |         18 |     12,209 |          0 |          4 |     12,213 |
+| PHP        |         70 |      9,231 |      2,528 |      3,494 |     15,253 |
+| CSS        |          5 |      1,850 |         13 |        173 |      2,036 |
+| JavaScript |          7 |      1,053 |        173 |        241 |      1,467 |
+| SQL        |          2 |        432 |          0 |         46 |        478 |
+| HTML       |          1 |         23 |          0 |          0 |         23 |
+| Ini        |          1 |          8 |          0 |          4 |         12 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                 |        104 |     24,806 |      2,714 |      3,962 |     31,482 |
+| . (Files)                                                                                                         |         23 |        214 |         33 |        125 |        372 |
+| .private                                                                                                          |          1 |          8 |          0 |          4 |         12 |
+| controllers                                                                                                       |         16 |      2,661 |      1,088 |      1,852 |      5,601 |
+| css                                                                                                               |          5 |      1,850 |         13 |        173 |      2,036 |
+| db                                                                                                                |          3 |        459 |         13 |         60 |        532 |
+| img                                                                                                               |         18 |     12,209 |          0 |          4 |     12,213 |
+| js                                                                                                                |          7 |      1,053 |        173 |        241 |      1,467 |
+| models                                                                                                            |         14 |      2,197 |      1,048 |        908 |      4,153 |
+| views                                                                                                             |         17 |      4,155 |        346 |        595 |      5,096 |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                          | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\.private\config.php.ini                            | Ini        |          8 |          0 |          4 |         12 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\admin_index.php                                    | PHP        |          3 |          1 |          3 |          7 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\admin_perfil_index.php                             | PHP        |          3 |          0 |          2 |          5 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\ajaxconsultas.php                                  | PHP        |         37 |         13 |         18 |         68 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\cerrarsesion.php                                   | PHP        |          6 |          3 |          2 |         11 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\admin_perfil_controller.php            | PHP        |        119 |         49 |         71 |        239 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\enviar_membresia_controller.php        | PHP        |         99 |         40 |         59 |        198 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\hotel_turista_controller.php           | PHP        |         86 |         58 |         77 |        221 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\login_controller.php                   | PHP        |        132 |         70 |        103 |        305 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\pagina_admin_controller.php            | PHP        |        108 |         47 |         73 |        228 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\pago_admin_controller.php              | PHP        |         95 |         32 |         69 |        196 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\perfil_restaurante_controller.php      | PHP        |        172 |         64 |        138 |        374 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\registro_controller.php                | PHP        |        349 |        128 |        182 |        659 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\registroadmin_controller.php           | PHP        |         86 |         33 |         62 |        181 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\resenas_controller.php                 | PHP        |        227 |        100 |        184 |        511 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\restaurante_principal_controller.php   | PHP        |        479 |        149 |        294 |        922 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\restaurantes_vencidos_controller.php   | PHP        |         61 |         23 |         50 |        134 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\solicitudes_restaurante_controller.php | PHP        |         92 |         35 |         77 |        204 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\turista_perfil_controller.php          | PHP        |        258 |        107 |        173 |        538 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\turista_principal_controller.php       | PHP        |        137 |         85 |        107 |        329 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\controllers\turista_restaurante_controller.php     | PHP        |        161 |         68 |        133 |        362 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\css\Ingreso.css                                    | CSS        |        422 |          1 |         67 |        490 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\css\nuevoregister.css                              | CSS        |        382 |          1 |         10 |        393 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\css\post-login.css                                 | CSS        |        879 |         11 |         95 |        985 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\css\restaurantestyles.css                          | CSS        |          0 |          0 |          1 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\css\styles.css                                     | CSS        |        167 |          0 |          0 |        167 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\db\db.php                                          | PHP        |         27 |         13 |         14 |         54 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\db\saborizameCreate.sql                            | SQL        |        151 |          0 |         18 |        169 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\db\saborizameInserts.sql                           | SQL        |        281 |          0 |         28 |        309 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\enviar_membresia_index.php                         | PHP        |          3 |          1 |          2 |          6 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\error.html                                         | HTML       |         23 |          0 |          0 |         23 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\hotel_turista_index.php                            | PHP        |          3 |          1 |          4 |          8 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\ajustes.svg                                    | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\email.svg                                      | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\empresa.svg                                    | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\facebook.svg                                   | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\flecha_abajo.svg                               | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\github.svg                                     | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\icon.svg                                       | XML        |      1,541 |          0 |          1 |      1,542 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\imageningreso.svg                              | XML        |      3,110 |          0 |          1 |      3,111 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\instagram.svg                                  | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\isotipo_empresa.svg                            | XML        |        378 |          0 |          1 |        379 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\linkedin.svg                                   | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\log_out.svg                                    | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\login.svg                                      | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\logo_producto.svg                              | XML        |      7,166 |          0 |          1 |      7,167 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\mail.svg                                       | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\phone.svg                                      | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\usr_icon.svg                                   | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\img\volver.svg                                     | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\index.php                                          | PHP        |          3 |          1 |          2 |          6 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\RegistrarseRestaurante.js                       | JavaScript |        702 |        110 |        158 |        970 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\ingresohotel.js                                 | JavaScript |         90 |         15 |         18 |        123 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\loginjs.js                                      | JavaScript |        124 |         16 |         33 |        173 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\menuheader.js                                   | JavaScript |          8 |          2 |          1 |         11 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\restaurante_y_resenas.js                        | JavaScript |         54 |         11 |          6 |         71 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\restauranteprincipaljs.js                       | JavaScript |         61 |         18 |         21 |        100 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\js\turista.js                                      | JavaScript |         14 |          1 |          4 |         19 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\login_index.php                                    | PHP        |          3 |          1 |          3 |          7 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\administrador_model.php                     | PHP        |        120 |         81 |         80 |        281 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\archivos_model.php                          | PHP        |         61 |         54 |         57 |        172 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\asistencia_model.php                        | PHP        |        158 |         75 |         58 |        291 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\barrio_model.php                            | PHP        |         40 |         23 |         23 |         86 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\horario_model.php                           | PHP        |        116 |         55 |         47 |        218 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\hospedaje_model.php                         | PHP        |        121 |         56 |         41 |        218 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\hotel_model.php                             | PHP        |         44 |         25 |         25 |         94 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\nacionalidad_model.php                      | PHP        |         72 |         40 |         32 |        144 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\promociones_model.php                       | PHP        |        237 |        101 |        132 |        470 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\resena_model.php                            | PHP        |        287 |        111 |        103 |        501 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\restaurante_model.php                       | PHP        |        604 |        274 |        176 |      1,054 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\turista_model.php                           | PHP        |         77 |         32 |         32 |        141 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\usuario_model.php                           | PHP        |        166 |         90 |         63 |        319 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\models\verificacion_de_usuarios_model.php          | PHP        |         94 |         31 |         39 |        164 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\pagina_principal_admin_index.php                   | PHP        |          3 |          1 |          2 |          6 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\pago_admin_index.php                               | PHP        |          3 |          1 |          2 |          6 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\perfil_restaurante_index.php                       | PHP        |          3 |          0 |          2 |          5 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\pruebas_index.php                                  | PHP        |         91 |          4 |         53 |        148 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\register_restaurante_index.php                     | PHP        |          3 |          1 |          4 |          8 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\registro_admin_index.php                           | PHP        |          3 |          0 |          1 |          4 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\registro_index.php                                 | PHP        |          3 |          0 |          2 |          5 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\resenas_index.php                                  | PHP        |          3 |          1 |          2 |          6 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\restaurante_principal_index.php                    | PHP        |          3 |          1 |          4 |          8 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\restaurante_turista_index.php                      | PHP        |          3 |          1 |          5 |          9 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\restaurantes_vencidos_index.php                    | PHP        |          3 |          0 |          2 |          5 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\solicitudes_restaurante_index.php                  | PHP        |          3 |          0 |          2 |          5 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\turista_perfil_index.php                           | PHP        |          3 |          1 |          4 |          8 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\turista_principal_index.php                        | PHP        |          3 |          1 |          4 |          8 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\admin_perfil_view.php                        | PHP        |        209 |          0 |         19 |        228 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\administrador_pagos_view.php                 | PHP        |        283 |         11 |         44 |        338 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\administrador_view.php                       | PHP        |        211 |          0 |         28 |        239 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\historial_view.php                           | PHP        |        102 |          0 |          1 |        103 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\hotel_turista_view.php                       | PHP        |        150 |          0 |          7 |        157 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\login_view.php                               | PHP        |        149 |          0 |         14 |        163 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\pago_restaurante_view.php                    | PHP        |         69 |        145 |          8 |        222 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\registrar_admin_view.php                     | PHP        |        140 |          0 |          7 |        147 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\registro_view.php                            | PHP        |        551 |          1 |         93 |        645 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\resenas_view.php                             | PHP        |        255 |          1 |         58 |        314 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\restaurante_perfil_view.php                  | PHP        |        132 |        180 |         25 |        337 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\restaurante_principal_view.php               | PHP        |        523 |          4 |         90 |        617 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\restaurante_turista_view.php                 | PHP        |        431 |          4 |         87 |        522 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\restaurantes_vencidos_view.php               | PHP        |        171 |          0 |         18 |        189 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\solicitudes_restaurante_view.php             | PHP        |        159 |          0 |         22 |        181 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\turista_perfil_view.php                      | PHP        |        397 |          0 |         41 |        438 |
+| c:\Users\Lukie\Desktop\Proyecto\Diseño web\PHPProducto - copia\views\turista_principal_view.php                   | PHP        |        223 |          0 |         33 |        256 |
+| Total                                                                                                             |            |     24,806 |      2,714 |      3,962 |     31,482 |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

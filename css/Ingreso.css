@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgba(235, 128, 40, 0.767);
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(255, 197, 151);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 197, 151, 1) 0%,
+    rgba(248, 229, 217, 1) 45%,
+    rgba(248, 228, 215, 1) 55%,
+    rgba(255, 197, 151, 1) 100%
+  );
+}
+
+.txtlinks {
+  font-size: large;
+}
+
+.txtlinks {
+  color: rgb(248, 229, 217);
+  font-family: Titulo;
+}
+
+.imgsalir {
+  width: 20px;
+  padding-left: 10px;
+  transform: scale(1.5);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor,
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedorcompleto,
+.contenedordatosturista {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 40px;
+  margin-top: 30px;
+  padding: 50px;
+  font-family: txt;
+  position: relative;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+  box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.44);
+  z-index: 1000;
+}
+
+.contenedordatosturista {
+  height: max-content;
+}
+
+.RegistroTurista,
+.RegistroRestaurante,
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6,
+.MensajeRegistro {
+  display: none;
+  height: max-content;
+}
+
+.titulologin {
+  font-family: txt;
+  text-align: center;
+  padding-bottom: 45px;
+  user-select: none;
+}
+
+.divboton h3 {
+  user-select: none;
+}
+
+.contenedordatos {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgb(228, 228, 228);
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  padding: 15px 50px;
+  box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.32);
+}
+
+.contenedordatos p {
+  color: black;
+  user-select: none;
+}
+
+.contenedorinfo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 550px;
+  width: 650px;
+  border-radius: 25px;
+  margin: 40px;
+  margin-top: 30px;
+  padding: 40px;
+  font-family: txt;
+  box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.44);
+  z-index: 1000;
+}
+
+.contenedorinfo h2 {
+  font-weight: bold;
+}
+
+.contenedorinfo p {
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.imginfo {
+  width: 250px;
+  display: flex;
+  margin: auto;
+  transition: 0.8s;
+  user-select: none;
+}
+
+.imginfo:hover {
+  transform: rotate(360deg);
+  transition: 0.7s;
+}
+
+.contenedorcompleto {
+  text-align: center;
+  width: max-content;
+  margin: 80px auto;
+}
+
+.premios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tipousuario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botontipousuario {
+  background-color: rgb(248, 229, 217);
+  color: rgb(235, 128, 40);
+  border: solid 4px rgb(235, 128, 40);
+  max-width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: x-large;
+  font-family: txt;
+  font-weight: bold;
+  margin: 30px;
+  padding: 30px;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.4s;
+  width: max-content;
+}
+
+.botontipousuario:hover {
+  background-color: rgb(235, 128, 40);
+  color: rgb(248, 229, 217);
+}
+
+.divboton,
+.divbotonlogin {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 50px;
+  width: 300px;
+  margin: auto;
+}
+
+.divbotonlogin {
+  flex-direction: column;
+}
+
+.botoningreso {
+  background-color: rgb(59, 131, 59);
+  text-align: center;
+  width: max-content;
+  padding: 15px;
+  margin: 10px auto;
+  font-family: txt;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.botoningreso:hover {
+  background-color: rgb(0, 48, 0);
+  filter: brightness(120%);
+  transition: 0.5s;
+}
+
+.register {
+  color: rgb(235, 128, 40);
+  text-decoration: none underline;
+  transition: 0.4s;
+}
+
+.register:hover {
+  color: rgb(184, 86, 6);
+  letter-spacing: 3px;
+}
+
+.txtformulario {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid rgb(201, 201, 201) 2px;
+  border-radius: 50px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.msjerror {
+  color: red;
+  font-weight: bold;
+}
+
+.txtpremios {
+  width: 150px;
+}
+
+.horarios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contenedorhorario {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid rgba(0, 0, 0, 0.575) 1.5px;
+  border-radius: 4px;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+}
+
+.amboshorarios {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkhorario {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgb(59, 26, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(107, 46, 0) 0%,
+    rgba(235, 128, 40, 1) 95%
+  );
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+footer h2 {
+  display: flex;
+  justify-content: start;
+  color: white;
+  font-weight: lighter;
+  font-family: txt;
+  user-select: none;
+  animation-name: encendido;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+footer section {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 350px;
+}
+
+.divcontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 350px;
+  height: 250px;
+}
+
+footer section div a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: txt;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: max-content;
+  transition: 0.2s;
+}
+
+footer section div a:hover {
+  letter-spacing: 7px;
+  transition: 0.2s;
+  color: white;
+}
+
+footer section div a img {
+  width: 50px;
+  padding-right: 20px;
+  user-select: none;
+}
+
+.textogrande {
+  letter-spacing: normal;
+}
+
+.textogrande:hover {
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.textofooter {
+  color: white;
+  font-family: txt;
+  font-size: large;
+  user-select: none;
+  text-align: start;
+}
+
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 100;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 99;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 100;
+  opacity: 0.2;
+  bottom: 0;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 99;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+#map {
+  height: 30%;
+}
+
+section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.SeleccionUsuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: Titulo;
+  src: url(../fonts/pointfree.ttf);
+}
+
+@font-face {
+  font-family: txt;
+  src: url(../fonts/CaviarDreams.ttf);
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 480px) {
+}

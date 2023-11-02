@@ -1,0 +1,984 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: txt;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: rgba(235, 128, 40, 0.767);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(59, 131, 59);
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+body {
+  background: rgb(255, 197, 151);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 197, 151, 1) 0%,
+    rgba(248, 229, 217, 1) 45%,
+    rgba(248, 228, 215, 1) 55%,
+    rgba(255, 197, 151, 1) 100%
+  );
+}
+
+header {
+  height: 100px;
+  background: rgb(11, 105, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 105, 11, 1) 7%,
+    rgba(59, 131, 59, 1) 91%
+  );
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.44);
+}
+
+body::-webkit-scrollbar{
+  background: rgba(235, 128, 40, 0.76);
+  width: 13px;
+  z-index: 9998;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.479);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: rgba(0, 0, 0, 0.712);
+}
+
+.sidebar::-webkit-scrollbar{
+  width: 7px;
+  background: rgba(235, 128, 40, 0.76);
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.726);
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover{
+  background: rgba(255, 255, 255, 0.897);
+}
+
+
+.imglogo {
+  width: 120px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgb(11, 105, 11);
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+.txtlinks {
+  color: rgb(248, 229, 217);
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.txtlinks:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.imglogo:hover {
+  transform: rotate(360deg);
+  transition: 0.7s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.tituloheader {
+  display: flex;
+  align-items: center;
+  font-family: txt;
+  text-align: center;
+  user-select: none;
+  color: rgb(248, 229, 217);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  font-family: txt;
+  text-align: center;
+  user-select: none;
+  color: black;
+}
+
+section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.admin-panel {
+  margin-top: 0;
+}
+
+.container h1,
+h2,
+h3 {
+  color: green;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  margin: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: rgb(0, 43, 0);
+  transition: 0.5s;
+}
+
+.abutton {
+  padding: 5px 10px;
+  color: white;
+}
+
+.usuarios {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+
+.consultas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+.consultas h2 {
+  margin-right: 20px;
+}
+
+/* Estilos para la paginación */
+.pagination {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre los resultados y la paginación */
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #555;
+}
+
+.pagination .current {
+  background-color: #555;
+  color: #fff;
+}
+
+.restaurant-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.restaurant-profile img {
+  /* Estilos para la imagen de la foto de perfil */
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.contenedor,
+.contenedorbuscar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 40px auto;
+  margin-top: 30px;
+  padding: 50px;
+  font-family: txt;
+  position: relative;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+  box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.44);
+  z-index: 1000;
+}
+
+.contenedordatos {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgb(228, 228, 228);
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  padding: 15px 50px;
+  box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.32);
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorpromociones {
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 25px;
+  align-items: center;
+  height: 100px;
+}
+
+.contenedorbuscar {
+  width: 1500px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.botoningreso,
+.botonrechazo,
+.botoncancelar {
+  background-color: rgb(59, 131, 59);
+  text-align: center;
+  width: max-content;
+  padding: 10px;
+  margin: 10px auto;
+  font-family: txt;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.botoningreso:hover {
+  background-color: rgb(21, 80, 21);
+}
+
+.botonrechazo {
+  background-color: rgb(226, 65, 65);
+}
+
+.botonrechazo:hover {
+  background-color: rgb(148, 41, 33);
+}
+
+.botoncancelar {
+  background-color: #555;
+}
+
+.botoncancelar:hover {
+  background-color: #333;
+}
+
+.txtformulario,
+.txtformularioselect,
+.txtformulariobuscar {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgb(201, 201, 201) 2px;
+  border-radius: 50px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.txtformularioselect {
+  border-radius: 0;
+  width: max-content;
+}
+
+.txtformulariobuscar {
+  width: 750px;
+}
+
+.contenedor nav ul li {
+  margin: 20px;
+}
+
+.adatos {
+  font-size: larger;
+  background-color: rgb(201, 201, 201);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.adatos:hover {
+  color: rgb(11, 105, 11);
+}
+
+.modal {
+  z-index: 10000;
+}
+
+.titulomodal {
+  color: black;
+  font-weight: bold;
+}
+
+.titulobody {
+  text-align: center;
+  color: rgb(11, 105, 11);
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.modal-body p {
+  font-size: larger;
+}
+
+.contenedorsolicitud {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.32);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgb(59, 26, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(107, 46, 0) 0%,
+    rgba(235, 128, 40, 1) 95%
+  );
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-family: txt;
+}
+
+footer h2 {
+  display: flex;
+  justify-content: start;
+  color: white;
+  font-weight: lighter;
+  font-family: txt;
+  user-select: none;
+  animation-name: encendido;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+footer section {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 350px;
+}
+
+.divcontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 350px;
+  height: 250px;
+}
+
+footer section div a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: txt;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: max-content;
+  transition: 0.2s;
+}
+
+footer section div a:hover {
+  letter-spacing: 7px;
+  transition: 0.2s;
+  color: white;
+}
+
+footer section div a img {
+  width: 50px;
+  padding-right: 20px;
+  user-select: none;
+}
+
+.textogrande {
+  letter-spacing: normal;
+}
+
+.textogrande:hover {
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.textofooter {
+  color: white;
+  font-family: txt;
+  font-size: large;
+  user-select: none;
+  text-align: start;
+}
+
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 100;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 99;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 100;
+  opacity: 0.2;
+  bottom: 0;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 99;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.perfil {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 5em;
+  text-align: center;
+  width: fit-content;
+}
+.perfil h2 {
+  margin-bottom: 1em;
+}
+.perfil label {
+  font-size: large;
+}
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+  text-align: center;
+}
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.5em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.8);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: rgb(235, 128, 40);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+section input[type="text"],
+section input[type="email"],
+section[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+section input[type="submit"] {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 1s;
+}
+section input[type="submit"]:hover {
+  background-color: green;
+  transition: 0.3s;
+  filter: brightness(120%);
+}
+.creacion-admin {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+#crearAdmin {
+  margin-top: 30px;
+}
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: max-content;
+  margin: auto;
+}
+
+.restaurant {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+.restaurant p {
+  color: #333;
+}
+.search-filter {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-bar {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+.filters {
+  display: flex;
+  gap: 20px;
+}
+#search-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#search-button:hover {
+  background-color: darkgreen;
+}
+#filter-category {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#restaurant-name {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/*LO AGREGO GONZALO*/
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 100px;
+}
+.restaurant-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.restaurant-profile img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.restaurant-details {
+  flex: 1;
+  padding: 10px;
+}
+.profile-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}
+.profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="password"],
+.profile-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.historial {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.historial ul li {
+  margin: 10px 0;
+}
+.historial strong {
+  font-weight: bold;
+}
+.historial ul {
+  list-style: none;
+  padding-left: 0;
+}
+.restaurant-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.accept-button,
+.reject-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reject-button {
+  background-color: #f44336;
+}
+
+.links_restaurante {
+  width: 210px;
+  height: 254px;
+  border-radius: 4px;
+  background: #ffffff;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+}
+.links_restaurante p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s;
+  background: #ffffff;
+  border: 1px solid rgb(235, 128, 40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links_restaurante p:hover {
+  flex: 4;
+}
+.links_restaurante p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: rgb(235, 128, 40);
+  letter-spacing: 0.1em;
+}
+.links_restaurante p:hover span {
+  transform: rotate(0);
+}
+.registroHotel {
+  width: max-content;
+  margin: auto;
+  margin-top: 3em;
+  border-radius: 15%;
+  background-color: white;
+  border-radius: 20px;
+  background-color: rgb(228, 228, 228);
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 15px 50px;
+  box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.32);
+}
+#formularioregistrohotel {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#formularioregistrohotel label {
+  font-size: larger;
+  margin-bottom: 0.5em;
+}
+#formularioregistrohotel {
+  flex-direction: column;
+}
+#formularioregistrohotel input[type="submit"] {
+  margin-top: 0.5em;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba(235, 128, 40, 0.76); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  z-index: 95;
+}
+
+/* The sidebar links */
+.sidebar .txtslide {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar .txtslide:hover {
+  letter-spacing: 2px;
+  background-color: rgb(235, 128, 40);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn:hover {
+  transform: scale(1.1);
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(235, 128, 40);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(219, 107, 14);
+  transform: scale(1.1);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@font-face {
+  font-family: txt;
+  src: url(../fonts/CaviarDreams.ttf);
+}
